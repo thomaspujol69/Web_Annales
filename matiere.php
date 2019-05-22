@@ -21,7 +21,7 @@ echo '<p>Choisissez la classe : </p>';
 
 // if not (isset($_POST["matiere"])){
 echo '<form name="classe" method="post" action="classe.php?var='.$matiere.'">';
-$classes = ['Trle','1ère','2nde','3ème','4ème','5ème','6ème'];
+$classes = ['Trle','1ere','2nde','3eme','4eme','5eme','6eme'];
 $liste = '<select id="classe" name="classe">';
 // echo '<form id="classe" method="POST" action="classe.php?var='.$matiere.'"> ';
 
@@ -46,7 +46,7 @@ foreach($iterator as $fichier){
       $file = $fichier->getFilename();
       // On ne garde que le nom de la matière
       //echo $file.'<br>';
-      $name = substr($file, 0, strlen($file)-18 );
+      $name = substr($file, 0, strlen($file)-20 );
       //echo $name.'<br>';
       if($name==$matiere){
         echo '<a href="./files/'.$file.'">'.$file.'</a> <br><br>';

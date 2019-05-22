@@ -27,7 +27,7 @@ foreach($iterator as $fichier){
    // Affiche le fichier avec le lien
       $file = $fichier->getFilename();
       // On ne garde que le nom de la matière
-      $name = substr($file, 0, strlen($file)-12 );
+      $name = substr($file, 0, strlen($file)-15 );
       // echo $name.'<br><p>OK2</p><br>';
       $nom = $matiere.'_'.$classe;
       // echo $matiere.'_'.$classe.'<p>OK3</p><br>';
