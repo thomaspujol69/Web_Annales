@@ -5,7 +5,37 @@
         <title>Ma page web</title>
     </head>
     <body>
-        <h1>Ma page web</h1>
-        <p>Aujourd'hui nous sommes le <?php echo date('d/m/Y h:i:s'); ?>.</p>
+        <h1>Annales</h1>
+        <p>Aujourd'hui nous sommes le <?php echo date('d/m/Y h:i:s'); ?>.</p> <br>
+        <p>Chroisissez la matière : </p>
+        
+<?php
+// if not (isset($_POST["matiere"])){
+echo '<form name="matiere" method="post" action="matiere.php">';
+$matieres = ['Mathématiques','Français','Physique-Chimie','Anglais','Allemand','Italien'];
+$liste = '<select id="matiere" name="matiere">';
+// echo '<form id="matiere" method="POST" action="matiere.php"> ';
+
+// Pour chaque matière :
+foreach($matieres as $matiere){
+    $liste .= '<option value="'.$matiere.'">'.$matiere.'</option>';
+}
+
+$liste .= '</select>';
+echo $liste;
+echo '<br><br><input name="OK" type="submit" value="Valider">';
+// }
+?>
+<br><br><br>
+
+
+</form>
+<br>
+<br>
+<br>
+<br>
+
+
+
     </body>
 </html>
