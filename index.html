@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Ma page web</title>
+        <title>Annales - Institution des Chartreux</title>
     </head>
     <body>
-        <h1>Annales</h1>
+        <h1><a href="./">Annales - Institution des Chartreux</a></h1>
         <p>Aujourd'hui nous sommes le <?php echo date('d/m/Y h:i:s'); ?>.</p> <br>
         <p>Chroisissez la matière : </p>
         
@@ -23,19 +23,10 @@ foreach($matieres as $matiere){
 
 $liste .= '</select>';
 echo $liste;
-echo '<br><br><input name="OK" type="submit" value="Valider">';
+echo '<br><br><input name="OK" type="submit" value="Valider"><br><br><br>';
 // }
+echo '</form>';
 ?>
-<br><br><br>
-
-
-</form>
-<br>
-<br>
-<br>
-<br>
-
-
 
     </body>
 </html>
