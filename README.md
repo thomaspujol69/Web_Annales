@@ -9,5 +9,22 @@ Un fichier ne respectant pas ces caractéristiques sera invisible pour les utili
 Une version de cette application est disponible sur internet : http://annales.atspace.cc/
 
 
+| Matière        | Syntaxe      |
+| --------|-------|
+|Allemand|Allemand|
+|Anglais|Anglais|
+|Arts-Plastiques|Arts-Plastiques|
+|Chinois|Chinois|
+|Français|Français|
+|HG-EMC|Histoire - Géographie - Enseignement Morale et Civique|
+|Informatique|Informatique|
+|Italien|Italien|
+|Mathématiques|Mathématiques|
+|Musique|Musique|
+|Philosophie|Philosophie|
+|Physique-Chimie|Physique-Chimie|
+|SVT|Sciences de la Vie et de la Terre|
+|Technologie|Technologie|
+
 
 This code is released under the GNU General Public License v3.0 (GPL-3.0).
