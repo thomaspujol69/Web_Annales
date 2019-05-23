@@ -3,7 +3,7 @@ Code source d'un serveur web permettant le partage de sujets et de corrigés de 
 
 Une version de cette application est disponible sur internet : http://annales.atspace.cc/
 
-Pour ajouter une copie, le fichier doit se trouver au format PDF ou dans une archive ZIP, nommée sous la forme:
+Pour ajouter une copie, le fichier doit se trouver au format PDF, nommé sous la forme:
 MATIERE_SPECIALITE(O/N)_CLASSE_IE/DS_ANNEE-MOIS. Exemple : Anglais_Oui_1ere_DS_2018-11.pdf
 
 Chaque fichier ne respectant pas ces caractéristiques sera invisible pour les utilisateurs. 
