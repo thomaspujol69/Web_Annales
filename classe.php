@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <title>Annales - Institution des Chartreux</title>
+		<link rel="stylesheet" href="design.css" type="text/css" media="screen" />
+		<meta name="viewport" content="width=device-width, user-scalable=yes" />
     </head>
     <body>
         <h1><a href="./">Annales - Institution des Chartreux</a></h1>

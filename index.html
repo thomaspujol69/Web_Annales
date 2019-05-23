@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <title>Annales - Institution des Chartreux</title>
+		<link rel="stylesheet" href="design.css" type="text/css" media="screen" />
+		<meta name="viewport" content="width=device-width, user-scalable=yes" />
     </head>
     <body>
         <h1><a href="./">Annales - Institution des Chartreux</a></h1>
@@ -12,7 +14,7 @@
 <?php
 // if not (isset($_POST["matiere"])){
 echo '<form name="matiere" method="post" action="matiere.php">';
-$matieres = ['Mathématiques','Français','Physique-Chimie','Anglais','Allemand','Italien'];
+$matieres = ['Allemand', 'Anglais', 'Arts-Plastiques', 'Chinois', 'Français', 'HG-EMC', 'Informatique', 'Italien', 'Mathématiques', 'Musique', 'Philosophie', 'Physique-Chimie', 'SVT', 'Technologie'];
 $liste = '<select id="matiere" name="matiere">';
 // echo '<form id="matiere" method="POST" action="matiere.php"> ';
 
