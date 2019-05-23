@@ -27,4 +27,16 @@ Une version de cette application est disponible sur internet : http://annales.at
 |Technologie|Technologie|
 
 
+| Classe        | Syntaxe      |
+| --------|-------|
+|Terminale|Trle|
+|Première|1ere|
+|Seconde|2nde|
+|Troisième|3eme|
+|Quatième|4eme|
+|Cinquième|5eme|
+|Sixième|6eme|
+
+
+
 This code is released under the GNU General Public License v3.0 (GPL-3.0).
