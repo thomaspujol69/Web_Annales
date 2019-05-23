@@ -23,7 +23,7 @@ $mois = $_POST["mois"];
 // echo $annee;
 $nom = $matiere.'_'.$optn.'_'.$classe.'_'.$type.'_'.$annee.'-'.$mois.'.pdf';
 if(isset($matiere) and isset($optn) and isset($classe) and isset($type)){
-    echo "<p>Merci de votre contribution ! </p><br>";
+    
     $name = $matiere.'_'.$optn.'_'.$classe.'_'.$type;
     //print $name.'<br><br>';
     $uploaddir = '../uploads/';
@@ -33,6 +33,7 @@ if(isset($matiere) and isset($optn) and isset($classe) and isset($type)){
      if(move_uploaded_file($_FILES['avatar']['tmp_name'], $dossier . $fichier)) //Si la fonction renvoie TRUE, c'est que ça a fonctionné...
      {
           echo 'Chargement effectué avec succès !<br>';
+          echo "<p>Merci de votre contribution ! </p><br>";
           rename('../files/'.$fichier, '../files/'.$nom);
      }
      else //Sinon (la fonction renvoie FALSE).
