@@ -11,6 +11,9 @@ Chaque fichier ne respectant pas ces caractéristiques sera invisible pour les u
 
 Syntaxe:
 
+INFO : Une "spécialité" correspond à un enseigement plus avancé que celui d'autres élèves.
+       Par exemple, une LV1, ou encore la Physique-Chimie (si vous êtes en série S) correspondent à une spécialité
+
 | Matière        | Syntaxe      |
 | --------|-------|
 |Allemand|Allemand|
@@ -18,14 +21,14 @@ Syntaxe:
 |Arts-Plastiques|Arts-Plastiques|
 |Chinois|Chinois|
 |Français|Français|
-|HG-EMC|Histoire - Géographie - Enseignement Morale et Civique|
+|Histoire - Géographie - Enseignement Morale et Civique|HG-EMC|
 |Informatique|Informatique|
 |Italien|Italien|
 |Mathématiques|Mathématiques|
 |Musique|Musique|
 |Philosophie|Philosophie|
 |Physique-Chimie|Physique-Chimie|
-|SVT|Sciences de la Vie et de la Terre|
+|Sciences de la Vie et de la Terre|SVT|
 |Technologie|Technologie|
 
 
@@ -38,6 +41,11 @@ Syntaxe:
 |Quatième|4eme|
 |Cinquième|5eme|
 |Sixième|6eme|
+
+| Type de devoir|Syntaxe|
+| --------|-------|
+|Devoir Surveillé|DS|
+|Interrogation Ecrite|IE|
 
 
 
