@@ -13,7 +13,7 @@
 <?php
 $matiere = $_POST["matiere"];
 if(isset($matiere)){
-   echo "Vous allez accéder aux fichiers en rapport avec la matière : ".$matiere.'<br><br>';
+   echo "Vous allez accéder aux fichiers en rapport avec la matière : ".$matiere.'.'.'<br><br>';
            
 }
 
@@ -41,6 +41,8 @@ echo '</form>';
 $dossier = 'files';
 $iterator = new DirectoryIterator($dossier);
 // $files = array();
+echo '<br><p>Liste des fichiers disponibles avec vos critaires : </p>';
+echo '<ul>';
 foreach($iterator as $fichier){
    // La fonction isDot retourne TRUE si l'élement courant est "." ou ".."
   if(!$fichier->isDot()){
@@ -48,11 +50,14 @@ foreach($iterator as $fichier){
       $file = $fichier->getFilename();
       // On ne garde que le nom de la matière
       //echo $file.'<br>';
-      $name = substr($file, 0, strlen($file)-21 );
-      //echo $name.'<br>';
+      $name = substr($file, 0, strlen($file)-24 );
+      //echo $name.'  '.$matiere.'<br>';
+      
       if($name==$matiere){
-        echo '<a href="./files/'.$file.'">'.$file.'</a> <br><br>';
+        echo '<li><a href="./files/'.$file.'">'.$file.'</a></li><br>';
       }
+    
+    echo '</ul>';  
     }
 }
 ?>

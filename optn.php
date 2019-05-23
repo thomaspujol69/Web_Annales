@@ -13,13 +13,17 @@
 <?php
 
 $optn = $_POST["optn"];
-if(isset($optn)){
-   echo "<p>Vous êtes un optionnaire. </p><br>';
+if($optn == 'Oui'){
+   echo "<p>Vous êtes un optionnaire. </p><br>";
+}
+else {
+    echo "<p>Vous n'êtes pas optionnaire. </p><br>";
+
 }
 
-$matiere = $_POST["matiere"];
+$matiere = $_GET['var'];
 if(isset($matiere)){
-   echo "Vous allez accéder aux fichiers en rapport avec la matière : ".$matiere.'<br><br>';
+   echo 'Vous allez accéder aux fichiers en rapport avec la matière : '.$matiere.'.'.'<br><br>';
            
 }
 
@@ -47,6 +51,8 @@ echo '</form>';
 $dossier = 'files';
 $iterator = new DirectoryIterator($dossier);
 // $files = array();
+echo '<br><p>Liste des fichiers disponibles avec vos critaires : </p>';
+echo '<ul>';
 foreach($iterator as $fichier){
    // La fonction isDot retourne TRUE si l'élement courant est "." ou ".."
   if(!$fichier->isDot()){
@@ -54,11 +60,14 @@ foreach($iterator as $fichier){
       $file = $fichier->getFilename();
       // On ne garde que le nom de la matière
       //echo $file.'<br>';
-      $name = substr($file, 0, strlen($file)-18 );
+      $name = substr($file, 0, strlen($file)-20 );
       //echo $name.'<br>';
-      if($name==$matiere){
-        echo '<a href="./files/'.$file.'">'.$file.'</a> <br><br>';
+      $nom = $matiere.'_'.$optn;
+      //echo $nom.'<br><br>';
+      if($name==$nom){
+        echo '<li><a href="./files/'.$file.'">'.$file.'</a></li><br>';
       }
+    echo '</ul>';
     }
 }
 ?>
