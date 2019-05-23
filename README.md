@@ -6,7 +6,7 @@ Une version de cette application est disponible sur internet : http://annales.at
 Pour ajouter une copie, le fichier doit se trouver au format PDF ou dans une archive ZIP, nommée sous la forme:
 MATIERE_CLASSE_IE/DS_MOIS-ANNEE. Exemple : Anglais_1ere_DS_05-2019.pdf
 
-Un fichier ne respectant pas ces caractéristiques sera invisible pour les utilisateurs. 
+Chaque fichier ne respectant pas ces caractéristiques sera invisible pour les utilisateurs. 
 
 
 Syntaxe:
