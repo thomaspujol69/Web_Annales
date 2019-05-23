@@ -11,6 +11,12 @@
 
 
 <?php
+
+$optn = $_POST["optn"];
+if(isset($optn)){
+   echo "<p>Vous êtes un optionnaire. </p><br>';
+}
+
 $matiere = $_POST["matiere"];
 if(isset($matiere)){
    echo "Vous allez accéder aux fichiers en rapport avec la matière : ".$matiere.'<br><br>';
@@ -19,17 +25,17 @@ if(isset($matiere)){
 
 // Préparation et affichage liste déroulante
 
-echo '<p>La matière choisie est elle une spécialité ? (Par défaut, répondre Non.) </p>';
+echo '<p>Choisissez la classe : </p>';
 
 // if not (isset($_POST["matiere"])){
-echo '<form name="optn" method="post" action="optn.php?var='.$matiere.'">';
-$optns = ['Non','Oui'];
-$liste = '<select id="optn" name="optn">';
-// echo '<form id="optn" method="POST" action="optn.php?var='.$matiere.'"> ';
+echo '<form name="classe" method="post" action="classe.php?var='.$matiere.'_'.$optn.'">';
+$classes = ['Trle','1ere','2nde','3eme','4eme','5eme','6eme'];
+$liste = '<select id="classe" name="classe">';
+// echo '<form id="classe" method="POST" action="classe.php?var='.$matiere.'"> ';
 
 // Pour chaque matière :
-foreach($optns as $optn){
-    $liste .= '<option value="'.$optn.'">'.$optn.'</option>';
+foreach($classes as $classe){
+    $liste .= '<option value="'.$classe.'">'.$classe.'</option>';
 }
 $liste .= '</select>';
 echo $liste;
@@ -48,7 +54,7 @@ foreach($iterator as $fichier){
       $file = $fichier->getFilename();
       // On ne garde que le nom de la matière
       //echo $file.'<br>';
-      $name = substr($file, 0, strlen($file)-21 );
+      $name = substr($file, 0, strlen($file)-18 );
       //echo $name.'<br>';
       if($name==$matiere){
         echo '<a href="./files/'.$file.'">'.$file.'</a> <br><br>';
