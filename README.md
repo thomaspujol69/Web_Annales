@@ -12,7 +12,7 @@ Chaque fichier ne respectant pas ces caractéristiques sera invisible pour les u
 Syntaxe:
 
 INFO : Une "spécialité" correspond à un enseigement plus avancé que celui d'autres élèves.
-       Par exemple, une LV1, ou encore la Physique-Chimie (si vous êtes en série S) correspondent à une spécialité
+       Par exemple, une LV1 et,  si vous êtes en série S, la Physique-Chimie, correspondent à une spécialité
 
 | Matière        | Syntaxe      |
 | --------|-------|
