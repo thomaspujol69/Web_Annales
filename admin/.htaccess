@@ -1,4 +1,4 @@
-AuthName "Page d'administration protégée"
+AuthName "Page d'upload protégée"
 AuthType Basic
 AuthUserFile "/home/www/annales.atspace.cc/admin/.htpasswd"
 Require valid-user
