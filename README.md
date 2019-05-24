@@ -3,13 +3,16 @@ Code source d'un serveur web permettant le partage de sujets et de corrigés de 
 
 Une version de cette application est disponible sur internet : http://annales.atspace.cc/
 
-Pour ajouter une copie, le fichier doit se trouver au format PDF ou dans une archive ZIP, nommée sous la forme:
-MATIERE_CLASSE_IE/DS_MOIS-ANNEE. Exemple : Anglais_1ere_DS_05-2019.pdf
+Pour ajouter une copie, le fichier doit se trouver au format PDF, nommé sous la forme:
+MATIERE_SPECIALITE(O/N)_CLASSE_IE/DS_ANNEE-MOIS. Exemple : Anglais_Oui_1ere_DS_2018-11.pdf
 
 Chaque fichier ne respectant pas ces caractéristiques sera invisible pour les utilisateurs. 
 
 
 Syntaxe:
+
+INFO : Une "spécialité" correspond à un enseigement plus avancé que celui d'autres élèves.
+       Par exemple, une LV1 et,  si vous êtes en série S, la Physique-Chimie, correspondent à une spécialité
 
 | Matière        | Syntaxe      |
 | --------|-------|
@@ -18,14 +21,14 @@ Syntaxe:
 |Arts-Plastiques|Arts-Plastiques|
 |Chinois|Chinois|
 |Français|Français|
-|HG-EMC|Histoire - Géographie - Enseignement Morale et Civique|
+|Histoire - Géographie - Enseignement Morale et Civique|HG-EMC|
 |Informatique|Informatique|
 |Italien|Italien|
 |Mathématiques|Mathématiques|
 |Musique|Musique|
 |Philosophie|Philosophie|
 |Physique-Chimie|Physique-Chimie|
-|SVT|Sciences de la Vie et de la Terre|
+|Sciences de la Vie et de la Terre|SVT|
 |Technologie|Technologie|
 
 
@@ -38,6 +41,11 @@ Syntaxe:
 |Quatième|4eme|
 |Cinquième|5eme|
 |Sixième|6eme|
+
+| Type de devoir|Syntaxe|
+| --------|-------|
+|Devoir Surveillé|DS|
+|Interrogation Ecrite|IE|
 
 
 
